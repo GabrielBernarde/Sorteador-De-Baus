@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baus do Tesouro</title>
+  <div id="initial-loading-screen" class="hidden">
+    <div class="loading-spinner"></div>
+    <p>Carregando...</p>
+    <link rel="stylesheet" href="./index.css">
+  </div>
+
+
+  <div id="register-screen">
+    <div class="register-container">
+      <h3>(Instruções)<br> Esse projeto possui 3 páginas:<br> 1° Cadastramento do usuário<br> 2° Jogo dos baús
+        'sorteador'(Abra todos os baús)<br>3° Tela com os resultados do sorteio <br>Espere pois programei para ter telas
+        de carregamento</h3>
+      <h2>Cadastro de Cliente</h2>
+      <form id="register-form">
+        <div class="form-group">
+          <label for="username">Nome:</label>
+          <input type="text" id="username" name="username">
+        </div>
+        <div class="form-group">
+          <label for="id">ID:</label>
+          <input type="text" id="id" name="id" readonly>
+        </div>
+        <button id="register-btn" class="btn btn-primary">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+  </div>
+
+
+  <div id="loading-screen" class="hidden">
+    <div class="loading-spinner"></div>
+    <p>Carregando...</p>
+  </div>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+
+        <img src="" alt="Logo">
+
+      </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="box">
+        <img id="bauImage1" src="./bau_sprite_0.png" alt="Baú 1">
+        <button id="triggerButton1">Abrir Baú</button>
+      </div>
+      <div class="box">
+        <img id="bauImage2" src="./bau_sprite_0.png" alt="Baú 2">
+        <button id="triggerButton2">Abrir Baú</button>
+      </div>
+      <div class="box">
+        <img id="bauImage3" src="./bau_sprite_0.png" alt="Baú 3">
+        <button id="triggerButton3">Abrir Baú</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="box">
+        <img id="bauImage4" src="./bau_sprite_0.png" alt="Baú 4">
+        <button id="triggerButton4">Abrir Baú</button>
+      </div>
+      <div class="box">
+        <img id="bauImage5" src="./bau_sprite_0.png" alt="Baú 5">
+        <button id="triggerButton5">Abrir Baú</button>
+      </div>
+      <div class="box">
+        <img id="bauImage6" src="./bau_sprite_0.png" alt="Baú 6">
+        <button id="triggerButton6">Abrir Baú</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="box">
+        <img id="bauImage7" src="./bau_sprite_0.png" alt="Baú 7">
+        <button id="triggerButton7">Abrir Baú</button>
+      </div>
+      <div class="box">
+        <img id="bauImage8" src="./bau_sprite_0.png" alt="Baú 8">
+        <button id="triggerButton8">Abrir Baú</button>
+      </div>
+      <div class="box">
+        <img id="bauImage9" src="./bau_sprite_0.png" alt="Baú 9">
+        <button id="triggerButton9">Abrir Baú</button>
+      </div>
+    </div>
+    <div class="result-container">
+      <ul id="result-list">
+
+      </ul>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
